@@ -8,7 +8,7 @@ const client = redis.createClient({
 
 client.set("visits", 0);
 app.get("/crash", (req, res) => {
-    ps.exit(0);
+    ps.exit(3);
 })
 
 app.get("/", (req, res) => {
